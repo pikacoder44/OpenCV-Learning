@@ -1,0 +1,26 @@
+# Ignore virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore model/data files
+*.h5
+*.pkl
+*.weights
+*.npy
+*.npz
+
+# Ignore IDE configs
+.vscode/
+.idea/
+
+# Ignore images/videos if large
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.png
