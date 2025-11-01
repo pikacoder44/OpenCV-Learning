@@ -29,15 +29,27 @@ print(img.shape)
 
 
 # ------------------------------- Changing pixel colors -----------------------------
-img = cv2.cvtColor(img, cv2.COLOR_BGRA2BGR)  # Convert to BGR
+# img = cv2.cvtColor(img, cv2.COLOR_BGRA2BGR)  # Convert to BGR
 
-for i in range(100):
-    for j in range(img.shape[1]):
-        img[i][j] = [
-            random.randint(0, 255),
-            random.randint(0, 255),
-            random.randint(0, 255),
-        ]
+# for i in range(100):
+#     for j in range(img.shape[1]):
+#         img[i][j] = [
+#             random.randint(0, 255),
+#             random.randint(0, 255),
+#             random.randint(0, 255),
+#         ]
+# cv2.imshow("Image", img)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
+
+
+# -------------------------- Copying & Pasting Parts of Image -------------------------
+
+tag = img[500:700, 600:900]
+img[100:300, 650:950] = tag
+
+img = cv2.resize(img, (400, 400) )
+
 cv2.imshow("Image", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
