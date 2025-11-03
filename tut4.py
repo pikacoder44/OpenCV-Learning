@@ -10,13 +10,11 @@ while True:
     height = int(cap.get(4))
 
     # How to Draw a line
-    img = cv2.line(
-        frame, (0, 0), (width, height), (255, 0, 0), 10
-    )  # It will draw line from top left to shape of frame
+    img = cv2.line(frame, (0, 0), (width, height), (255, 0, 0), 10)
+    img = cv2.line(img, (0, height), (width, 0), (0, 255, 0), 5)
 
-    # syntax is: cv2.line(frame, (Starting coordinates), (Ending Coordinates), (RGB of color of line), Thickness of line in px)
-
-    # Coordinates in OpenCV starts from 0,0 which is top left corner of frame
+    # How to Draw a ractangle
+    img = cv2.rectangle(img, (100, 100), (200, 200), (128, 128, 128), 5)
 
     cv2.imshow("frame", frame)
 
