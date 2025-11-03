@@ -14,7 +14,7 @@ while True:
     img = cv2.line(img, (0, height), (width, 0), (0, 255, 0), 5)
 
     # How to Draw a ractangle
-    img = cv2.rectangle(img, (100, 100), (200, 200), (128, 128, 128), 5)
+    img = cv2.rectangle(img, (100, 100), (200, 200), (128, 128, 128), 5) # use -1 in thickness to fill ractangle
 
     cv2.imshow("frame", frame)
 
