@@ -17,10 +17,3 @@ Thumbs.db
 # Ignore IDE configs
 .vscode/
 .idea/
-
-# Ignore images/videos if large
-*.mp4
-*.avi
-*.mov
-*.jpg
-*.png

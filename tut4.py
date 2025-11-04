@@ -16,7 +16,10 @@ while True:
     # How to Draw a ractangle
     img = cv2.rectangle(img, (100, 100), (200, 200), (128, 128, 128), 5)
 
-    cv2.imshow("frame", frame)
+    # How to draw a circle
+    img = cv2.circle(img, (300,300), 60, (128,0,0),5)
+
+    cv2.imshow("frame", img)
 
     if cv2.waitKey(1) == ord("q"):
         break
