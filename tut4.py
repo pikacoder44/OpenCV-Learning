@@ -26,7 +26,7 @@ while True:
         "Hashir",
         (200, height - 10),
         font,
-        4,
+        7,
         (0, 255, 0),
         cv2.LINE_AA,
     )
