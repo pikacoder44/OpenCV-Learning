@@ -1,17 +1,12 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture("assets/video.mp4")
+img = cv2.imread("assets/chessboard.png")
 
-while True:
-    ret, frame = cap.read()
-    width = int(cap.get(3))
-    height = int(cap.get(4))
- 
-    cv2.imshow("Frame", frame)
+img = cv2.resize(img, (0, 0), fx=0.75, fy=0.75)
 
-    if cv2.waitKey(1) == ord("q"):
-        break
+cv2.imshow("Frame", img)
 
-cap.release()
+cv2.waitKey(0)
+
 cv2.destroyAllWindows()
