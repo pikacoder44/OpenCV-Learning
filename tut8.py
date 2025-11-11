@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture("assets/video.mp4")
+cap = cv2.VideoCapture(0)
 
 #  Loading Classifiers
 face_cascade = cv2.CascadeClassifier(
